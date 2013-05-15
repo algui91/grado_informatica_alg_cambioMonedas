@@ -2,8 +2,10 @@ package com.elbauldelprogramador.algoritmica.progDinamica;
 
 public class Main {
 	
-	private final static int P	 = 8;			// Cantidad a devolver
-	private final static int[] C = {1, 4, 6};	// Valor de los N tipos de monedas	
+	private final static int P	 = 
+			BuildConf.returnPforExample(BuildConf.WHAT_EXAMPLE);	// Cantidad a devolver
+	private final static int[] C = 
+			BuildConf.returnCforExample(BuildConf.WHAT_EXAMPLE);	// Valor de los N tipos de monedas
 	
 	private static void cambio(final int[] C, final int cantidadADevolver) {
 
